@@ -1,0 +1,50 @@
+[
+  {
+    "provider": "hf",
+    "models": [
+      "google/codegemma-7b",
+      "google/codegemma-1.1-2b",
+      "codellama/CodeLlama-7b-hf",
+      "Qwen/CodeQwen1.5-7B",
+      "deepseek-ai/deepseek-coder-1.3b-base",
+      "deepseek-ai/deepseek-coder-6.7b-base",
+      "bigcode/starcoder2-3b",
+      "bigcode/starcoder2-7b"
+    ]
+  },
+  {
+    "provider": "ollama",
+    "models": [
+      "codegemma:2b-code-v1.1-q4_K_M",
+      "codegemma:2b-code-v1.1-q8_0",
+      "codegemma:7b-code-q4_K_M",
+      "codegemma:7b-code-q8_0",
+      "codellama:7b-code-q4_K_M",
+      "codellama:7b-code-q8_0",
+      "codeqwen:7b-code-v1.5-q8_0",
+      "codeqwen:7b-code-v1.5-q4_1",
+      "deepseek-coder:1.3b-base-q4_K_M",
+      "deepseek-coder:1.3b-base-q8_0",
+      "deepseek-coder:6.7b-base-q4_K_M",
+      "deepseek-coder:6.7b-base-q8_0",
+      "starcoder2:3b-q4_K_M",
+      "starcoder2:3b-q8_0",
+      "starcoder2:7b-q4_K_M",
+      "starcoder2:7b-q8_0"
+    ]
+  },
+  {
+    "provider": "claude",
+    "models": [
+      "claude-3-opus-20240229",
+      "claude-3-sonnet-20240229"
+    ]
+  },
+  {
+    "provider": "openai",
+    "models": [
+      "gpt-4o-2024-05-13",
+      "gpt-3.5-turbo-0125"
+    ]
+  }
+]

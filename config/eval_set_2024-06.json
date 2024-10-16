@@ -1,0 +1,24 @@
+{
+  "title": "eval_2024-06",
+  "content": [
+    {
+      "repo": "https://github.com/code-423n4/2024-06-vultisig.git",
+      "include": ["src/*"],
+      "commit": "7fb0da757c98116090f35810146ea742ca3b94da"
+    },
+    {
+      "repo": "https://github.com/code-423n4/2024-06-size.git",
+      "include": ["src/*"],
+      "commit": "8850e25fb088898e9cf86f9be1c401ad155bea86"
+    },
+    {
+      "repo": "https://github.com/code-423n4/2024-06-panoptic.git",
+      "include": ["contracts/*"],
+      "commit": "153f0d82440b7e63075d55b0659706531431145f"
+    },
+    {
+      "repo": "https://github.com/code-423n4/2024-06-thorchain.git",
+      "include": ["chain/ethereum/contracts/*"],
+      "commit": "e3fd3c75ff994dce50d6eb66eb290d467bd494f5"
+    }]
+}

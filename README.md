@@ -8,11 +8,12 @@ The following models are supported by CompChomper:
 * Claude (3.0 Sonnet, 3.0 Opus, 3.5 Sonnet)
 * CodeGemma
 * CodeLLama
-* CodeQwen
+* CodeQwen 1.5
 * Codestral
 * GPT {3.5, 4, 4o}
 * DeepSeek Coder (v1.5, v2)
 * StarCoder2
+* Qwen2.5-Coder
 
 The following inference engines are supported:
 * Claude API (only for Claude models)

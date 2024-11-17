@@ -19,3 +19,4 @@ huggingface_hub[cli]
 accelerate
 sentencepiece
 wheel
+tree-sitter-javascript==0.21

@@ -9,7 +9,12 @@
       "deepseek-ai/deepseek-coder-1.3b-base",
       "deepseek-ai/deepseek-coder-6.7b-base",
       "bigcode/starcoder2-3b",
-      "bigcode/starcoder2-7b"
+      "bigcode/starcoder2-7b",
+      "Qwen/Qwen2.5-Coder-0.5B",
+      "Qwen/Qwen2.5-Coder-1.5B",
+      "Qwen/Qwen2.5-Coder-3B",
+      "Qwen/Qwen2.5-Coder-7B",
+      "Qwen/Qwen2.5-Coder-14B"
     ]
   },
   {
@@ -30,7 +35,17 @@
       "starcoder2:3b-q4_K_M",
       "starcoder2:3b-q8_0",
       "starcoder2:7b-q4_K_M",
-      "starcoder2:7b-q8_0"
+      "starcoder2:7b-q8_0",
+      "qwen2.5-coder:0.5b-base-q8_0",
+      "qwen2.5-coder:0.5b-base-q4_1",
+      "qwen2.5-coder:1.5b-base-q8_0",
+      "qwen2.5-coder:1.5b-base-q4_1",
+      "qwen2.5-coder:3b-base-q8_0",
+      "qwen2.5-coder:3b-base-q4_1",
+      "qwen2.5-coder:7b-base-q8_0",
+      "qwen2.5-coder:7b-base-q4_1",
+      "qwen2.5-coder:14b-base-q8_0",
+      "qwen2.5-coder:14b-base-q4_1"
     ]
   },
   {

@@ -247,6 +247,18 @@ class CodeQwenFIM(FIM):
 
         self.BOS = self.EOS
 
+class QwenCoder25FIM(FIM):
+    def __init__(self):
+        # taken from https://github.com/QwenLM/Qwen2.5-Coder/blob/main/examples/Qwen2.5-Coder-fim.py
+        super().__init__(
+            prefix_tok="<|fim_prefix|>",
+            middle_tok="<|fim_middle|>",
+            suffix_tok="<|fim_suffix|>",
+            eos_tok="<|endoftext|>",
+        )
+
+        self.BOS = self.EOS
+
 class CodeGemmaFIM(FIM):
     def __init__(self):
         # taken from https://ai.google.dev/gemma/docs/formatting
@@ -310,6 +322,8 @@ def load_template_by_model(model):
         # both are codeqwen1.5
         "codeqwen": CodeQwenFIM(),
         "codeqwen1.5": CodeQwenFIM(),
+        "qwen2.5-coder": QwenCoder25FIM(),
+        "qwen2.5": QwenCoder25FIM(),
         "codellama": CodeLlamaFIM(),
         "codegemma": CodeGemmaFIM(),
         # both are deepseek coder

@@ -45,6 +45,7 @@ This quickstart guide shows you how to reproduce our results evaluating Solidity
 ```sh
 # Install all pre-requisites & setup a virtual environment
 make dev
+source env/bin/activate
 
 #set up OPENAI_API_KEY, HF_TOKEN, ANTHROPIC_API_KEY in your env file:
 vim .env
@@ -61,6 +62,7 @@ make eval_all EVAL_DATA_FILE=eval_packages/eval_2024-06_whole_line.parquet
 make eval_all EVAL_DATA_FILE=eval_packages/eval_2024-06_until_eol.parquet
 
 # score every output (using only 1 line to match equivalence)
+mkdir eval_scores
 for i in eval_outputs/*.parquet; do
     python3 src/score_evals.py --input_file $i --output_file eval_scores/$(basename $i) --lines_to_match 1 2>/dev/null
 done
@@ -75,6 +77,7 @@ python3 src/output_table.py eval_scores/*.parquet
 ```sh
 # Install all pre-requisites & setup a virtual environment
 make dev
+source env/bin/activate
 
 # Install modal labs cli tool
 python3 -m pip install modal
@@ -105,9 +108,11 @@ modal run remote_eval.py::eval_openai
 modal run remote_eval.py::eval_claude
 
 # copy outputs from `eval_outputs` modal volume to local `eval_outputs/` directory
+mkdir eval_outputs
 modal volume get --force eval_outputs / eval_outputs/
 
 # score every output (using only 1 line to match equivalence)
+mkdir eval_scores
 for i in eval_outputs/*.parquet; do
     python3 src/score_evals.py --input_file $i --output_file eval_scores/$(basename $i) --lines_to_match 1 2>/dev/null
 done

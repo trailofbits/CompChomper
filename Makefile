@@ -16,7 +16,7 @@ all:
 dev: $(VENV)/pyvenv.cfg
 		@. $(VENV_BIN)/activate
 
-$(VENV)/pyvenv.cfg: pyproject.toml
+$(VENV)/pyvenv.cfg: requirements.txt
 		# Create our Python 3 virtual environment
 		python3 -m venv env
 		$(VENV_BIN)/python -m pip install --upgrade pip setuptools

@@ -1,0 +1,5 @@
+__pycache__/
+env/
+eval_outputs/
+eval_scores/
+.env

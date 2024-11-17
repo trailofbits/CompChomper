@@ -156,7 +156,6 @@ def run_in_sandbox(cmd: str):
         volumes=VOLUME_CONFIG,
         timeout=24 * HOURS,
         gpu=SINGLE_GPU_CONFIG,
-        _allow_background_volume_commits=True,
         secrets=[modal.Secret.from_dotenv()],
 
     )

@@ -5,7 +5,7 @@ numpy
 pandas
 pyarrow
 langchain_text_splitters
-transformers==4.42.4
+transformers==4.50.0
 colorama
 nltk
 tqdm
